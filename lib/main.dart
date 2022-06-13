@@ -6,7 +6,8 @@ import 'package:flutter/services.dart';
 import 'app/app.dart';
 
 void main(List<String> args) async {
-  final bool useMocks = args.contains("debug");
+  const bool useMocks = true;
+  // final bool useMocks = args.contains("debug");
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarBrightness: Brightness.dark));
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
