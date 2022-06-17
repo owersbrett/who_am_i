@@ -20,6 +20,14 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.15.0 <3.0.0"
 dependencies:
+  equatable: 
+  bloc: 
+  bloc_test: 
+  shared_preferences: 
+  swipe_cards: 
+  flutter_bloc: 
+  sqflite: 
+  hydrated_bloc:
   flutter:
     sdk: flutter
 
@@ -32,15 +40,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
-  flutter_bloc: 
-  equatable: 
-  bloc: 
-  bloc_test: 
-  shared_preferences: 
-  swipe_cards: 
-
-  sqflite: 
-  hydrated_bloc:
 flutter:
 
   # The following line ensures that the Material Icons font is

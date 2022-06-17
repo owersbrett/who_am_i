@@ -1,4 +1,10 @@
+import '../model/user.dart';
+
 abstract class UserEvent {
-const UserEvent();
+  const UserEvent();
 }
-class FetchUser extends UserEvent {}
+
+class SetUser extends UserEvent {
+  SetUser(this.user);
+  final User user;
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:who_am_i/bloc/user.dart';
 import 'package:who_am_i/bloc/user_bloc.dart';
 import 'package:who_am_i/model/user_quality_link.dart';
 import 'package:who_am_i/repository/group_repository.dart';
@@ -13,6 +14,8 @@ import 'package:who_am_i/repository/quality_repository.dart';
 import 'package:who_am_i/repository/user_quality_link_repository.dart';
 import 'package:who_am_i/repository/user_repository.dart';
 import 'package:who_am_i/view/screen/home.dart';
+
+import '../model/default/default.dart';
 
 class App extends StatelessWidget {
   const App({Key? key, required this.useMocks}) : super(key: key);
@@ -86,6 +89,7 @@ class _WhoAmIState extends State<WhoAmI> {
   void initState() {
     super.initState();
     userBloc = UserBloc();
+    userBloc.add(SetUser(Default.user));
   }
 
   @override
